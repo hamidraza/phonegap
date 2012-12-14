@@ -1,7 +1,11 @@
 @charset "utf-8";
 /* CSS Document */
 
-button.camera-control {
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+.camera-control {
 	background-color: #f3f3f3;
 	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f3f3f3), color-stop(50%, #dddddd), color-stop(50%, #d2d2d2), color-stop(100%, #dfdfdf));
 	background-image: -webkit-linear-gradient(top, #f3f3f3 0%, #dddddd 50%, #d2d2d2 50%, #dfdfdf 100%);
@@ -21,7 +25,7 @@ button.camera-control {
 	text-shadow: 0 1px 1px #fff;
 	width: 150px;
 }
-button.camera-control:hover {
+.camera-control:hover {
 	background-color: #e5e5e5;
 	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e5e5e5), color-stop(50%, #d1d1d1), color-stop(50%, #c4c4c4), color-stop(100%, #b8b8b8));
 	background-image: -webkit-linear-gradient(top, #e5e5e5 0%, #d1d1d1 50%, #c4c4c4 50%, #b8b8b8 100%);
@@ -29,7 +33,37 @@ button.camera-control:hover {
 	-webkit-box-shadow: inset 0 1px 0 0 #f2f2f2, 0 1px 0 0 #c9c9c9, 0 -1px 2px 1px #e3e3e3;
 	box-shadow: inset 0 1px 0 0 #f2f2f2, 0 1px 0 0 #c9c9c9, 0 -1px 2px 1px #e3e3e3;
 }
-button.camera-control:active {
+.camera-control:active {
 	-webkit-box-shadow: inset 0 0 30px 0 #999999, 0 1px 0 0 white;
 	box-shadow: inset 0 0 30px 0 #999999, 0 1px 0 0 white;
+}
+
+form ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+form ul li {
+	overflow:auto;
+}
+form ul .lbl {
+	display:block;
+	float:left;
+	width:70px;
+	padding:4px 0;
+}
+form ul li .field {
+	width:200px;
+	border:1px solid #ccc;
+	padding:3px 5px;
+	border-radius:3px;
+	box-shadow:inset 1px 1px 1px #ccc;
+}
+form ul li .submit {
+	border:1px solid #ccc;
+	background:#996;
+	color:#fff;
+	text-shadow:1px 1px 1px #333;
+	padding:5px 7px;
+	border-radius:3px;
 }
