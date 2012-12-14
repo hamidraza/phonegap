@@ -1,9 +1,5 @@
 function capturePhoto(){
-    try{
 		navigator.camera.getPicture(uploadPhoto,null,{sourceType:1,quality:60});
-	}catch(e){
-		console.log(e);
-	}
 }
 function uploadPhoto(data){
 	// this is where you would send the image file to server
